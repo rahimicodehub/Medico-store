@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+
+  <body class="bg-white">
+    <!-- Header -->
+    <header
+      class="w-full m-auto flex justify-center flex-col md:w-[90%] md:m-auto md:flex-row md:justify-between items-center p-3">
+      <img src="imgs/Logo.png" class="md:w-[20%] max-h-16 max-w-36" />
+      <div
+        class="search mt-3 flex flex-col md:flex-row md:w-[65%] border-[1px] border-gray-200 rounded-[6px] p-3 w-full">
+        <select>
+          <option value="" disabled selected>All Catagories</option>
+        </select>
+        <div class="bottomBox flex w-full md:border-l-2 md:ml-4 md:pl-3">
+          <input
+            type="text"
+            placeholder="Search medicine, medical products"
+            class="w-full" />
+          <div
+            class="src_iocn w-9 h-9 bg-green-700 flex justify-center items-center rounded-[6px] cursor-pointer">
+            <img src="imgs/svgs/1 header icons/search.svg" class="" />
+          </div>
+        </div>
+      </div>
+      <div class="icons flex gap-3 mt-3 md:w-[15%] md:justify-end">
+        <img
+          class="cursor-pointer"
+          src="imgs/svgs/1 header icons/heart.svg"
+          alt="" />
+        <img
+          class="cursor-pointer"
+          src="imgs/svgs/1 header icons/bag.svg"
+          alt="" />
+        <div
+          class="circle w-7 h-7 border-[2px] border-gray-200 rounded-full cursor-pointer flex">
+          <img src="imgs/pic1.png" class="h-full" />
+          <img
+            src="imgs/svgs/1 header icons/dwonvector.svg"
+            class="ml-1 w-2.5" />
+        </div>
+      </div>
+    </header>
+    <hr class="text-gray-200" />
+    <!-- Navbar -->
+    <nav class="sm:w-[90%] p-4 flex justify-center m-auto py-3">
+      <ul
+        class="w-full grid grid-cols-2 gap-x-10 lg:gap-x-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:flex xl:justify-between">
+        <li><a class="hover:font-semibold" href="#">Pain Relief</a></li>
+        <li><a class="hover:font-semibold" href="#">Cold and Flu</a></li>
+        <li><a class="hover:font-semibold" href="#">DiaBetes Care</a></li>
+        <li><a class="hover:font-semibold" href="#">Digestive Health</a></li>
+        <li><a class="hover:font-semibold" href="#">First Aid</a></li>
+        <li><a class="hover:font-semibold" href="#">Skin Care</a></li>
+        <li><a class="hover:font-semibold" href="#">Child and Baby Care</a></li>
+        <li><a class="hover:font-semibold" href="#">Heart Health</a></li>
+        <li><a class="hover:font-semibold" href="#">Eye and Ear Care</a></li>
+        <li><a class="hover:font-semibold" href="#">Respiratory Health</a></li>
+      </ul>
+    </nav>
+    <!-- Big Green Part -->
+    <main class="bg-green-950">
+      <div
+        class="container p-4 pb-0 lg:flex lg:flex-row lg:justify-between lg:items-center md:w-[90%] md:m-auto">
+        <div
+          class="left flex flex-col items-center text-white text-center lg:text-left lg:items-start">
+          <h1 class="text-3xl md:text-5xl xl:text-7xl">
+            Your Prescription for Affordable Health Solutions!
+          </h1>
+          <p class="my-3">
+            Elevate your health journey with exclusive discounts and
+            unparalleled convenience. Your path to well-being starts here, where
+            every purchase is a prescription for savings.
+          </p>
+          <div
+            class="btn flex justify-center items-center gap-1.5 bg-white hover:bg-gray-200 transition-colors duration-300 ease-in-out w-40 py-1.5 rounded-[5px] cursor-pointer">
+            <button class="text-green-600 text-[0.9rem] cursor-pointer">
+              Start Shopping
+            </button>
+            <img src="imgs/svgs/bag-green.svg" alt="" />
+          </div>
+        </div>
+        <img src="imgs/pic2.png" class="mt-3" />
+      </div>
+    </main>
+    <!-- Option-boxes -->
+    <section
+      class="options m-4 md:w-[90%] my-5 md:mx-auto grid grid-cols-2 lg:grid-cols-4 gap-3 text-bold">
+      <div
+        class="box flex items-center justify-between bg-green-200 hover:bg-green-400 transition-colors duration-300 ease-in-out rounded-[10px] p-3 cursor-pointer">
+        <div class="left flex items-center gap-2">
+          <img src="imgs/svgs/2 options/discount.svg" class="h-6" />
+          <h3 class="font-bold">Get 25% <br />OFF</h3>
+        </div>
+        <div class="right">
+          <img src="imgs/svgs/2 options/right_line.svg" alt="" />
+        </div>
+      </div>
+      <div
+        class="box flex items-center justify-between bg-amber-100 hover:bg-amber-300 transition-colors duration-300 ease-in-out rounded-[10px] p-3 cursor-pointer">
+        <div class="left flex items-center gap-2">
+          <img src="imgs/svgs/2 options/cart.svg" class="h-6" />
+          <h3 class="font-bold">free Home <br />Delivery</h3>
+        </div>
+        <div class="right">
+          <img src="imgs/svgs/2 options/right_line.svg" alt="" />
+        </div>
+      </div>
+      <div
+        class="box flex items-center justify-between bg-lime-200 hover:bg-lime-400 transition-colors duration-300 ease-in-out rounded-[10px] p-3 cursor-pointer">
+        <div class="left flex items-center gap-2">
+          <img src="imgs/svgs/2 options/appionments.svg" class="h-7" />
+          <h3 class="font-bold">Doctor's <br />Appointment</h3>
+        </div>
+        <div class="right">
+          <img src="imgs/svgs/2 options/right_line.svg" alt="" />
+        </div>
+      </div>
+      <div
+        class="box flex items-center justify-between bg-fuchsia-100 hover:bg-fuchsia-300 transition-colors duration-300 ease-in-out rounded-[10px] p-3 cursor-pointer">
+        <div class="left flex items-center gap-2">
+          <img src="imgs/svgs/2 options/health.svg" class="h-6" />
+          <h3 class="font-bold">Health <br />Advice</h3>
+        </div>
+        <div class="right">
+          <img src="imgs/svgs/2 options/right_line.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- New Products -->
+    <section class="p-4 md:p-0 md:w-[90%] m-auto">
+      <div class="top flex items-center justify-between mb-5">
+        <h1 class="font-bold text-2xl">New Products</h1>
+        <div class="left flex">
+          <a href="#" class="text-[0.8rem] font-[500] text-green-600"
+            >View All</a
+          >
+          <img
+            src="imgs/svgs/2 options/arrow_right_line.svg"
+            class="w-4 ml-1" />
+        </div>
+      </div>
+      <div class="boxes grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        <div
+          class="box1 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/1/pngegg (13) 1.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Foley Catheter</h2>
+              <p class="ml-3 mb-3">$12.90</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="box2 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/1/pngegg (11) 1.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Thermometer</h2>
+              <p class="ml-3 mb-3">$8.98</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="box3 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/1/pngwing 2.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Non-rebreather mask</h2>
+              <p class="ml-3 mb-3">$3.32</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="box4 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/1/pngegg (1) 1.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Wound Dressing</h2>
+              <p class="ml-3 mb-3">$24.78</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Popular Products -->
+    <section class="p-4 md:p-0 md:w-[90%] m-auto my-8">
+      <div class="top flex items-center justify-between mb-5">
+        <h1 class="font-bold text-2xl">Popular Products</h1>
+        <div class="left flex">
+          <a href="#" class="text-[0.8rem] font-[500] text-green-600"
+            >View All</a
+          >
+          <img
+            src="imgs/svgs/2 options/arrow_right_line.svg"
+            class="w-4 ml-1 cursor-pointer" />
+        </div>
+      </div>
+      <div class="boxes grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        <div
+          class="box1 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/2/image1.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Oxygen Mask</h2>
+              <p class="ml-3 mb-3">$2.00</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="box2 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/2/image2.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Surgical Gloves</h2>
+              <p class="ml-3 mb-3">$1.99</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="box3 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/2/image3.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Medical Mask</h2>
+              <p class="ml-3 mb-3">$0.98</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="box4 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/2/image4.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Hand Sanitizer</h2>
+              <p class="ml-3 mb-3">$4.00</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Big Products -->
+    <section class="big-products p-4 md:p-0 md:w-[90%] md:m-auto">
+      <div class="boxes xl:grid xl:grid-cols-5 gap-3">
+        <div
+          class="box-big bg-sky-50 rounded-xl p-4 sm:flex sm:justify-between items-center xl:col-span-3 xl:row-span-2 xl:mt-4  md:max-h-[510px]">
+          <div class="texts">
+            <button
+              class="bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out text-white rounded-[5px] p-1.5 px-2.5 text-xl cursor-pointer">
+              25% OFF
+            </button>
+            <h1 class="font-medium text-5xl my-4 uppercase 2xl:text-6xl">
+              black garlic oil
+            </h1>
+            <h2 class="text-[2.7rem] tracking-tight leading-12 2xl:text-5xl">
+              Stronger and Thicker <br />
+              Hair With Garlic Oil.
+            </h2>
+            <p class="line-through mt-5 mb-2">$37.00</p>
+            <div class="bottom flex items-center gap-4">
+              <h2 class="font-bold text-2xl">$37.00</h2>
+              <p>Including Tax</p>
+            </div>
+          </div>
+          <div class="imgbox flex justify-center items-center  ">
+            <img src="imgs/3/kara-sarimsak-yagi 1.png" class="xl:h-full md:max-h-[510px]" />
+          </div>
+        </div>
+        <div
+          class="right-boxes xl:col-span-2 xl:row-span-2 md:max-h-[510px]">
+          <div
+            class="box-left-top bg-amber-50 rounded-xl p-4 mt-4 sm:flex sm:justify-between items-center">
+            <div class="texts">
+              <button
+                class="bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out text-white rounded-[5px] p-1.5 px-2.5 text-xl cursor-pointer">
+                25% OFF
+              </button>
+              <h2
+                class="text-[2.7rem] tracking-tight leading-10 lg:text-[1.8rem] 2xl:text-4xl">
+                Dental Care Set Vivid and Bright Smiles
+              </h2>
+              <p class="line-through mt-5 mb-2">$33.90</p>
+              <div class="bottom flex items-center gap-4">
+                <h2 class="font-bold text-2xl">$22.90</h2>
+                <p>Including Tax</p>
+              </div>
+            </div>
+            <div class="imgbox flex justify-center">
+              <img src="imgs/3/muz.aromali.dis_.png" class="w-[110%]" />
+            </div>
+          </div>
+          <div
+            class="box-left-bottom bg-green-50 rounded-xl p-4 mt-4 sm:flex sm:justify-between items-center">
+            <div class="texts">
+              <button
+                class="bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out text-white rounded-[5px] p-1.5 px-2.5 text-xl cursor-pointer">
+                25% OFF
+              </button>
+              <h2
+                class="text-[2.7rem] tracking-tight leading-10 lg:text-[1.8rem] 2xl:text-4xl">
+                Banana Flavoured Toothpaste
+              </h2>
+              <p class="line-through mt-5 mb-2">$37.00</p>
+              <div class="bottom flex items-center gap-4">
+                <h2 class="font-bold text-2xl">$37.00</h2>
+                <p>Including Tax</p>
+              </div>
+            </div>
+            <div class="imgbox flex justify-center">
+              <img src="imgs/3/disbeyazlaticiset-2.png" class="w-[110%]" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Top Products -->
+    <section class="p-4 md:p-0 md:w-[90%] m-auto my-8">
+      <div class="top flex items-center justify-between mb-5">
+        <h1 class="font-bold text-2xl">Top Products</h1>
+        <div class="left flex">
+          <a href="#" class="text-[0.8rem] font-[500] text-green-600"
+            >View All</a
+          >
+          <img
+            src="imgs/svgs/2 options/arrow_right_line.svg"
+            class="w-4 ml-1 cursor-pointer" />
+        </div>
+      </div>
+      <div class="boxes grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        <div
+          class="box1 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/4/image1.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Hospital Bed</h2>
+              <p class="ml-3 mb-3">$109.89</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="box2 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/4/image2.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Walker Mobility</h2>
+              <p class="ml-3 mb-3">$12.80</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="box3 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/4/image3.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Wheelchair</h2>
+              <p class="ml-3 mb-3">$30.00</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="box4 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/4/image4.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Cruthes</h2>
+              <p class="ml-3 mb-3">$24.78</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Awards boxes -->
+    <section
+      class="options m-4 md:w-[90%] my-5 md:mx-auto grid grid-cols-2 lg:grid-cols-4 gap-3 text-bold">
+      <div
+        class="box  bg-green-200 hover:bg-green-400 transition-colors duration-300 ease-in-out rounded-2xl p-5 cursor-pointer">
+        <div class="top flex items-center gap-2">
+          <img src="imgs/svgs/3 award/1users.svg" class="bg-white p-1 rounded-[7px]">
+          <h1 class="font-bold text-2xl">14K+</h1>
+        </div>
+        <h1 class="font-bold mt-2  text-[1.1rem]">Oeders <br>Completed</h1>
+      </div>
+      <div
+        class="box bg-amber-100 hover:bg-amber-300 transition-colors duration-300 ease-in-out rounded-[10px] p-5 cursor-pointer">
+        <div class="top flex items-center gap-2">
+          <img src="imgs/svgs/3 award/2goldenMedal.svg" class="bg-white p-1 rounded-[7px]">
+          <h1 class="font-bold text-2xl">250+</h1>
+        </div>
+        <h1 class="font-bold mt-2  text-[1.1rem]">Won <br>Awards</h1>
+      </div>
+      <div
+        class="box bg-lime-200 hover:bg-lime-400 transition-colors duration-300 ease-in-out rounded-[10px] p-5 cursor-pointer">
+        <div class="top flex items-center gap-2">
+          <img src="imgs/svgs/3 award/3userGroup.svg" class="bg-white p-1 rounded-[7px]">
+          <h1 class="font-bold text-2xl">8K+</h1>
+        </div>
+        <h1 class="font-bold mt-2  text-[1.1rem]">Happy <br>Customers</h1>
+        </div>
+      </div>
+      <div
+        class="box bg-fuchsia-100 hover:bg-fuchsia-300 transition-colors duration-300 ease-in-out rounded-[10px] p-5 cursor-pointer">
+        <div class="top flex items-center gap-2">
+          <img src="imgs/svgs/3 award/4group.svg" class="bg-white p-1 rounded-[7px]">
+          <h1 class="font-bold text-2xl">12K+</h1>
+        </div>
+        <h1 class="font-bold mt-2  text-[1.1rem]">Positive <br>Reviews</h1>
+        </div>
+      </div>
+    </section>
+    <!-- Medical Products -->
+    <section class="p-4 md:p-0 md:w-[90%] m-auto my-8">
+      <div class="top flex items-center justify-between mb-5">
+        <h1 class="font-bold text-2xl">Medical Products</h1>
+        <div class="left flex">
+          <a href="#" class="text-[0.8rem] font-[500] text-green-600"
+            >View All</a
+          >
+          <img
+            src="imgs/svgs/2 options/arrow_right_line.svg"
+            class="w-4 ml-1 cursor-pointer" />
+        </div>
+      </div>
+      <div class="boxes grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        <div
+          class="box1 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/5/image1.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Sphygmomanometer</h2>
+              <p class="ml-3 mb-3">$15.09</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="box2 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/5/image2.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Digital Stethoscope</h2>
+              <p class="ml-3 mb-3">$29.99</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="box3 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/5/image3.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Glucometer</h2>
+              <p class="ml-3 mb-3">$12.08</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="box4 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/5/image4.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Pulse Oximeter</h2>
+              <p class="ml-3 mb-3">$30.00</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Upcoming Products -->
+    <section class="p-4 md:p-0 md:w-[90%] m-auto my-8">
+      <div class="top flex items-center justify-between mb-5">
+        <h1 class="font-bold text-2xl">Upcoming Products</h1>
+        <div class="left flex">
+          <a href="#" class="text-[0.8rem] font-[500] text-green-600"
+            >View All</a
+          >
+          <img
+            src="imgs/svgs/2 options/arrow_right_line.svg"
+            class="w-4 ml-1 cursor-pointer" />
+        </div>
+      </div>
+      <div class="boxes grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        <div
+          class="box1 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/6/image1.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Wound Dressing</h2>
+              <p class="ml-3 mb-3">$5.78</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="box2 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/6/image2.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">IV Catheter</h2>
+              <p class="ml-3 mb-3">$2.00</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="box3 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/6/image3.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Blood Pressure Cuff</h2>
+              <p class="ml-3 mb-3">$24.78</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="box4 shadow-2xl rounded-xl overflow-hidden max-h-[330px] sm:max-h-[400px]">
+          <div
+            class="elements flex justify-between items-center sm:flex-col p-3 sm:px-0">
+            <img src="imgs/6/image4.png" class="my-4 max-h-[130px]" />
+            <hr />
+            <div class="texts sm:border-t-[1.5px] border-gray-200 sm:w-full">
+              <h2 class="font-bold ml-3 mt-3">Chest Tube</h2>
+              <p class="ml-3 mb-3">$58.56</p>
+            </div>
+          </div>
+          <div
+            class="button flex justify-center bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-full cursor-pointer">
+            <button class="p-1.5 text-white cursor-pointer">Add to Cart</button>
+            <img src="imgs/svgs/cart-white.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Big light-blue Part -->
+    <main class="bg-sky-50">
+      <div
+        class="container p-4 md:px-0 lg:flex lg:flex-row lg:justify-between lg:items-center md:w-[90%] md:m-auto w-full">
+        <div
+          class="left flex flex-col items-center text-center lg:text-left lg:items-start md:w-full">
+          <p class="text-3xl">Todays Hot Offer</p>
+          <h1 class="text-3xl md:text-5xl xl:text-7xl">
+            Unlock 50% off on Essential Medicines!
+          </h1>
+          <p class="my-8">
+            Embrace wellness without breaking the back! Enjoy a generous 25% discount on a wide range of vital medincines at our online pharmacy. Your health matters, and so does you budget.
+          </p>
+          <div
+            class="btn flex justify-center items-center gap-1.5 bg-green-600 hover:bg-green-800 transition-colors duration-300 ease-in-out w-48 py-1.5 rounded-[5px] cursor-pointer">
+            <button class="text-white text-[0.9rem] cursor-pointer">
+              Place An Order Now
+            </button>
+            <img src="imgs/svgs/arrow_right_line-white.svg" cl="" />
+          </div>
+        </div>
+        <img src="imgs/pic3.png" class="mt-3 "  />
+      </div>
+    </main>
+    <!-- News & blogs -->
+     <section class="p-4 sm:p-0 sm:w-[90%] sm:m-auto">
+      <h1 class="text-center font-medium text-3xl my-8">Our Latest News & Blogs</h1>
+      <div class="container lg:grid lg:grid-cols-2 lg:gap-8 md:w-full md:m-auto ">
+        <!-- left Big Box -->
+        <div class="left border-[2px] border-gray-200 rounded-2xl overflow-hidden mb-4  2xl:max-h-[740px]">
+          <div class="imgBox w-full h-64 md:h-auto overflow-hidden">
+            <img src="imgs/7/image1.jpg" class="w-full h-full object-cover">
+          </div>
+          <div class="content p-4">
+            <div class="top flex items-center gap-3 ">
+              <button class="bg-sky-50 text-green-600 text-[0.7rem] cursor-pointer px-2 py-0.5 rounded-[5px]">Doctor</button>
+              <div class="time flex items-center gap-1">
+                <img src="imgs/svgs/event-calender-date-note 1.svg" class="h-6">
+                <p class="text-[0.9rem]">24 Dec, 2023</p>
+              </div>
+            </div>
+            <h1 class="text-2xl md:text-4xl">In this section, we delve into various aspects of health</h1>
+            <p class=" my-3 ">Explore the world of medical specialties through our blog's spotlight feature. From cardiology to prdiatriecs, we share in-depth articles written by our expert physicians.</p>
+            <button class="bg-green-600 hover:bg-green-800 text-white text-[0.8rem] px-4 py-1 rounded-[7px] transition-colors duration-300 ease-in-out cursor-pointer">Read More</button>
+          </div>
+        </div>
+        <!-- right Part -->
+        <div class="right flex flex-col gap-4 2xl:max-h-[740px]">
+          <!-- Right - Top -->
+          <div class="top-Box border-[2px] border-gray-200 rounded-2xl overflow-hidden md:flex justify-center">
+          <div class="imgBox w-full h-64 md:h-auto overflow-hidden" >
+            <img src="imgs/7/image2.jpg" class="w-full h-full object-cover">
+          </div>
+          <div class="content p-4 ">
+            <div class="top flex items-center gap-3 ">
+              <button class="bg-sky-50 text-green-600 text-[0.7rem] cursor-pointer px-2 py-0.5 rounded-[5px]">Doctor</button>
+              <div class="time flex items-center gap-1">
+                <img src="imgs/svgs/event-calender-date-note 1.svg" class="h-6">
+                <p class="text-[0.9rem]">24 Dec, 2023</p>
+              </div>
+            </div>
+            <h1 class="text-2xl lg:text-[1rem]">Discover a treasure trove of practical tips for enhancing</h1>
+            <p class=" my-3 md:my-1.5">From nutrition advice to exercise routines, we're here to support your journey toward a healthier.</p>
+            <button class="bg-green-600 hover:bg-green-800 text-white text-[0.8rem] px-4 py-1 rounded-[7px] transition-colors duration-300 ease-in-out cursor-pointer">Read More</button>
+          </div>
+        </div>
+        <!-- Right - Middle -->
+        <div class="top-Box border-[2px] border-gray-200 rounded-2xl overflow-hidden md:flex justify-center">
+          <div class="imgBox w-full h-64 md:h-auto overflow-hidden" >
+            <img src="imgs/7/image3.jpg" class="w-full h-full object-cover">
+          </div>
+          <div class="content p-4">
+            <div class="top flex items-center gap-3 ">
+              <button class="bg-sky-50 text-green-600 text-[0.7rem] cursor-pointer px-2 py-0.5 rounded-[5px]">Doctor</button>
+              <div class="time flex items-center gap-1">
+                <img src="imgs/svgs/event-calender-date-note 1.svg" class="h-6">
+                <p class="text-[0.9rem]">24 Dec, 2023</p>
+              </div>
+            </div>
+            <h1 class="text-2xl lg:text-[1rem]">Our patient's journeys are filled with courage, resilience, and triumph.</h1>
+            <p class=" my-3 md:my-1.5">In this section,we share inspiring narratives of indiviuals who have overcome health challanges.
+</p>
+            <button class="bg-green-600 hover:bg-green-800 text-white text-[0.8rem] px-4 py-1 rounded-[7px] transition-colors duration-300 ease-in-out cursor-pointer">Read More</button>
+          </div>
+        </div>
+        <!-- Right - Bottom -->
+        <div class="bottom-Box border-[2px] border-gray-200 rounded-2xl overflow-hidden md:flex justify-center">
+          <div class="imgBox w-full h-64 md:h-auto overflow-hidden" >
+            <img src="imgs/7/image4.jpg" class="w-full h-full object-cover">
+          </div>
+          <div class="content p-4 ">
+            <div class="top flex items-center gap-3 ">
+              <button class="bg-sky-50 text-green-600 text-[0.7rem] cursor-pointer px-2 py-0.5 rounded-[5px]">Doctor</button>
+              <div class="time flex items-center gap-1">
+                <img src="imgs/svgs/event-calender-date-note 1.svg" class="h-6">
+                <p class="text-[0.9rem]">24 Dec, 2023</p>
+              </div>
+            </div>
+            <h1 class="text-2xl lg:text-[1rem]">Discover a treasure trove of practical tips for enhancing</h1>
+            <p class="my-3 md:my-1.5">From nutrition advice to exercise routines, we're here to support your journey toward a healthier.</p>
+            <button class="bg-green-600 hover:bg-green-800 text-white text-[0.8rem] px-4 py-1 rounded-[7px] transition-colors duration-300 ease-in-out cursor-pointer">Read More</button>
+          </div>
+        </div>
+     </section>
+     <!-- Footer -->
+   <footer class="w-full bg-green-800 mt-12 pt-12 pb-6">
+      <section class="p-4 sm:w-[90%] sm:m-auto">
+        <div class="top-link grid mb-7 gap-3 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
+          <section class="contact my-6  ">
+            <h2 class="font-bold text-white mb-3">Contact</h2>
+            <div class="add flex gap-2 ">
+              <img src="imgs/svgs/4 footer/loacation.svg" class="w-4">
+              <p class="text-white">123 Road, Dhaka, Bangladesh</p>
+            </div>
+            <div class="phone flex gap-2 my-1">
+              <img src="imgs/svgs/4 footer/phone.svg" class="w-5">
+              <p class="text-white">+88017010767000</p>
+            </div>
+            <div class="email flex gap-2">
+              <img src="imgs/svgs/4 footer/email.svg" class="w-4">
+              <p class="text-white">sajiburdemo121@gmail.com</p>
+            </div>
+          </section>
+          <hr class="text-green-900 sm:hidden">
+          <section class="qck-links my-6">
+            <h2 class="font-bold text-white mb-3">Quick Links</h2>
+            <ul>
+              <li><a href="#" class="text-white ">Home</a></li>
+              <li class="my-2"><a href="#" class="text-white ">About</a></li>
+              <li><a href="#" class="text-white ">Services</a></li>
+              <li class="my-2"><a href="#" class="text-white ">Careers</a></li>
+              <li><a href="#" class="text-white ">Contact</a></li>
+            </ul>
+          </section>
+          <hr class="text-green-900 sm:hidden">
+          <section class="spclst my-6">
+            <h2 class="font-bold text-white mb-3">Specialties</h2>
+            <ul>
+              <li><a href="#" class="text-white ">Anesthesiology</a></li>
+              <li class="my-2"><a href="#" class="text-white ">Psychiatry</a></li>
+              <li><a href="#" class="text-white ">General surgery</a></li>
+              <li class="my-2"><a href="#" class="text-white ">Family medicine</a></li>
+              <li><a href="#" class="text-white ">Pediatrics</a></li>
+            </ul>
+          </section>
+          <hr class="text-green-900 sm:hidden">
+          <section class="services my-6">
+            <h2 class="font-bold text-white mb-3">Services</h2>
+            <ul>
+              <li><a href="#" class="text-white ">Medical</a></li>
+              <li class="my-2"><a href="#" class="text-white ">Operation</a></li>
+              <li><a href="#" class="text-white ">Labortory</a></li>
+              <li class="my-2"><a href="#" class="text-white ">ICU</a></li>
+              <li><a href="#" class="text-white ">Patient Ward</a></li>
+            </ul>
+          </section>
+          <hr class="text-green-900 sm:hidden">
+          <section class="socl-mda my-6">
+            <h2 class="font-bold text-white mb-3">Social Media</h2>
+            <ul class="flex justify-between gap-4">
+              <li class=""><a href="">
+                <img src="imgs/svgs/4 footer/facebook.svg" alt="">
+              </a></li>
+              <li><a href="">
+                <img src="imgs/svgs/4 footer/linkedin.svg" alt="">
+              </a></li>
+              <li><a href="">
+                <img src="imgs/svgs/4 footer/insta.svg" alt="">
+              </a></li>
+              <li><a href="">
+                <img src="imgs/svgs/4 footer/youtube.svg" alt="">
+              </a></li>
+            </ul>
+          </section>
+        </div>
+        <hr class="text-gray-400 my-4">
+      <div class="bottom text-center sm:flex sm:justify-between items-center">
+        <div class="left">
+          <h3 class="text-white">&copy;HEALTHY. <span>All rights reserved</span></h3>
+        </div>
+        <div class="right flex justify-between gap-6 mt-4 sm:mt-0">
+          <a href="" class="text-white">Terms and Conditions</a>
+          <a href="" class="text-white">Privacy Policy</a>
+        </div>
+      </div>
+      </section>
+    </footer> 
+  </body>
+</html>
